@@ -74,9 +74,6 @@ const Footer = () => {
           <p className="text-background/50 text-sm">
             © {new Date().getFullYear()} Boundless By LibraryOne. All rights reserved.
           </p>
-          <p className="text-background/50 text-sm">
-            Made with ❤️ for libraries everywhere
-          </p>
         </div>
       </div>
     </footer>

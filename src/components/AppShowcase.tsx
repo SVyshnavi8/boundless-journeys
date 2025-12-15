@@ -44,7 +44,8 @@ const AppShowcase = () => {
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Your Library,{" "}
-                <span className="text-gradient">Everywhere You Go</span>
+                <br />                
+                <span className="text-foreground"> Everywhere You Go</span>
               </h2>
               <p className="text-lg text-muted-foreground">
                 Whether you're commuting, traveling, or relaxing at home, Boundless ensures your library is always within reach. No late fees, no hassle — just pure reading joy.

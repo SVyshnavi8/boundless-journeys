@@ -28,7 +28,6 @@ const features = [
     icon: Users,
     badge: "For Young Readers",
     title: "Kids & Teens Bundle",
-    subtitle: "1,000+ Titles",
     description: "Age-appropriate content designed to spark curiosity and foster a love of reading. STEAM videos, interactive stories, and educational resources.",
     bullets: [
       "Curated age-appropriate content",
@@ -48,7 +47,7 @@ const features = [
     description: "A personalized reading space with activity-based carousels, curated collections, and reading progress tracking tailored just for you.",
     bullets: [
       "Smart recommendations",
-      "Reading history & stats",
+      "Reading history & ",
       "Custom collections"
     ],
     image: shelfMockup,
@@ -357,7 +356,7 @@ const Features = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             Everything Your Library Needs,{" "}
-            <span className="text-gradient">In Your Pocket</span>
+            <span className="text-foreground">In Your Pocket</span>
           </motion.h2>
           <motion.p 
             className="text-lg text-muted-foreground"
