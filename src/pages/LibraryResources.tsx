@@ -2,7 +2,6 @@ import { Share2 } from "lucide-react";
 import Footer from "@/components/Footer";
 import ResourceCard from "@/components/ResourceCard";
 import LibraryResourcesHeader from "@/components/LibraryResourcesHeader";
-
 import heroResources from "@/assets/hero-resources.png";
 import boundlessLogo from "@/assets/boundless-logo.png";
 import marketingBg from "@/assets/marketing-bg.png";
@@ -93,7 +92,7 @@ const LibraryResources = () => {
         </div>
       </section>
 
-      {/* Resource cards */}
+      {/* Resource cards */}   
       <section className="py-16 pb-32 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
