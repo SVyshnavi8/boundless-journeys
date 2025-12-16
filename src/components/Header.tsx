@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Menu, X } from "lucide-react";
 
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Libraries", href: "#libraries" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "About", href: "#about" },
-];
+const navLinks: { label: string; href: string }[] = [];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,12 +40,22 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
-              Sign In
-            </Button>
-            <Button variant="secondary" size="default">
-              Get the App
-            </Button>
+          <Button
+            asChild
+          variant="ghost"
+          className="text-primary-foreground hover:bg-primary-foreground/10"
+          >
+            <a
+              href="/publishers.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              For Publishers
+            </a>
+          </Button>
+          <Button variant="secondary" size="default">
+            Library Resources
+          </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -78,12 +83,12 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-3 pt-4">
-                <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10 w-full">
-                  Sign In
-                </Button>
-                <Button variant="secondary" className="w-full">
-                  Get the App
-                </Button>
+              <Button variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10 w-full">
+                For Publishers
+              </Button>
+              <Button variant="secondary" className="w-full">
+                Library Resources
+              </Button>
               </div>
             </nav>
           </div>
