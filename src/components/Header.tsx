@@ -53,8 +53,8 @@ const Header = () => {
               For Publishers
             </a>
           </Button>
-          <Button variant="secondary" size="default">
-            Library Resources
+          <Button asChild variant="secondary">
+            <a href="/library-resources">Library Resources</a>
           </Button>
           </div>
 
