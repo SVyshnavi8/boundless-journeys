@@ -91,7 +91,7 @@ const LibraryResources = () => {
           </button>
         </div>
       </section>
-
+      
       {/* Resource cards */}   
       <section className="py-16 pb-32 bg-muted/30">
         <div className="container mx-auto px-4">
